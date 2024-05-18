@@ -19,7 +19,7 @@
                 }
             ],
             "outArguments": [],
-            "url": "https://your-server-url/execute", // Replace with your server URL
+            "url": "https://weather-activity-57e69ac6cb62.herokuapp.com/execute", // Replace with your server URL
             "verb": "POST",
             "body": "",
             "header": "",
@@ -30,20 +30,20 @@
     },
     "configurationArguments": {
         "publish": {
-            "url": "https://your-server-url/publish" // Optional: Endpoint for publish actions
+            "url": "https://weather-activity-57e69ac6cb62.herokuapp.com/publish" // Optional: Endpoint for publish actions
         },
         "validate": {
-            "url": "https://your-server-url/validate" // Optional: Endpoint for validate actions
+            "url": "https://weather-activity-57e69ac6cb62.herokuapp.com/validate" // Optional: Endpoint for validate actions
         },
         "stop": {
-            "url": "https://your-server-url/stop" // Optional: Endpoint for stop actions
+            "url": "https://weather-activity-57e69ac6cb62.herokuapp.com/stop" // Optional: Endpoint for stop actions
         }
     },
     "userInterfaces": {
         "configModal": {
             "height": 200,
             "width": 400,
-            "url": "https://your-server-url/index.html" // Replace with your server URL
+            "url": "https://weather-activity-57e69ac6cb62.herokuapp.com/ndex.html" // Replace with your server URL
         }
     }
 }
