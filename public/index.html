@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Activity Configuration</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div id="config">
+        <h2>Weather Activity Configuration</h2>
+        <label for="zipCode">ZIP Code:</label>
+        <input type="text" id="zipCode" name="zipCode" placeholder="Enter ZIP Code">
+        <button onclick="save()">Save</button>
+    </div>
+
+    <script>
+        function save() {
+            const zipCode = document.getElementById('zipCode').value;
+
+            if (!zipCode) {
+                alert('Please enter a ZIP code');
+                return;
+            }
+
+            const payload = {
+                zipCode: zipCode
+            };
+            console.log(payload);
+            connection.trigger('updateActivity', payload);
+        }
+    </script>
+</body>
+</html>

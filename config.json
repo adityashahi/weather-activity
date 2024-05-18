@@ -1,0 +1,49 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "icon": "images/icon.png",
+        "category": "message"
+    },
+    "type": "REST",
+    "lang": {
+        "en-US": {
+            "name": "Weather Activity",
+            "description": "Fetches and displays the temperature for a given ZIP code."
+        }
+    },
+    "arguments": {
+        "execute": {
+            "inArguments": [
+                {
+                    "zipCode": ""
+                }
+            ],
+            "outArguments": [],
+            "url": "https://your-server-url/execute", // Replace with your server URL
+            "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 10000
+        }
+    },
+    "configurationArguments": {
+        "publish": {
+            "url": "https://your-server-url/publish" // Optional: Endpoint for publish actions
+        },
+        "validate": {
+            "url": "https://your-server-url/validate" // Optional: Endpoint for validate actions
+        },
+        "stop": {
+            "url": "https://your-server-url/stop" // Optional: Endpoint for stop actions
+        }
+    },
+    "userInterfaces": {
+        "configModal": {
+            "height": 200,
+            "width": 400,
+            "url": "https://your-server-url/index.html" // Replace with your server URL
+        }
+    }
+}
